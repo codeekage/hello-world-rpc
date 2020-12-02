@@ -1,0 +1,26 @@
+{
+  "name": "rpc",
+  "version": "1.0.0",
+  "description": "Simple remote-procedure-call",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeekage/hello-world-rpc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeekage/hello-world-rpc/issues"
+  },
+  "homepage": "https://github.com/codeekage/hello-world-rpc#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "dotenv": "^8.2.0",
+    "grpc": "^1.24.4",
+    "grpc-caller": "^0.13.0"
+  }
+}
