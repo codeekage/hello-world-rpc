@@ -78,7 +78,7 @@ async function transferFunds(call, callback) {
       debitUserId,
       creditUserId,
       amount,
-      metadata,
+      metadata: JSON.parse(metadata),
       session,
     });
 
