@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package transactions;
+
+service Transactions {
+    rpc CreateTransaction (TransactionReq) returns (TransactionRes);
+    rpc TransferFunds (TransferFundsReq) returns (TransactionRes);
+}
+
+
+message TransferFundsReq {
+    string debitUserId = 1;
+    string creditUserId = 2;
+    uint32 amount = 3;
+    string metadata = 4;
+}
+
+message TransactionReq {
+    string userId = 1;
+    uint32 amount = 2;
+}
+
+
+message TransactionRes {
+    string message = 1;
+    bool success = 2;
+    string data = 3;
+    uint32 status = 4;
+    string error = 5;
+}
